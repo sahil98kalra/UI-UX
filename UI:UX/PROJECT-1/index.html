@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Basic. WordPress Theme</title>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <img src="images/logo.svg" alt="website name" />
+        </div>
+
+        <div class="mobile-menu" onclick="toggleMenu()"><img src="images/menu.svg" alt="This is">Menu</div>
+
+        <div id="toggleMyMenu" style="display: none;">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">PODCAST</a></li>
+                <li><a href="">DONATE</a></li>
+            </ul>
+        </div>
+
+        <div class="slogan">MY MOTIVATION WORLD.</div>
+
+        <div class="author">
+            <div class="author-image"><img src="images/author.jpg" alt="Author Name"/></div>
+            <div class="author-content"> Everybody has their private world where they can be alone, to connect to their mysteries where one feel more united and open to in life.To me this is religion , not some set of rules and orders imposed by others.</div>   
+                
+        </div>
+
+        <div class="social">
+            <div class="newsletter">
+                <input type="text" placeholder="Email Newsletter" class="subscribeinput">
+                <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="subscribebutton">
+            </div>
+            <div class="networks"> 
+                <a href="#"><img src="images/facebook.svg" alt="facebook" /></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+                <a href="#"><img src="images/instagram.svg" alt="Instagram" /></a>
+                <a href="#"><img src="images/search.svg" alt="Search" /></a>
+            </div>
+
+        </div>
+        
+        <div class="container">
+
+            <div class="article">
+                <div class="thumbnail"><img src="images/image1.jpg" alt="Author Name"/></div>
+                <div class="content">
+                    <h1>Sahil Kalra</h1>
+                    <p>I designed it in a rhyme ,to explain in due time.It always starts with one thing i don’t know why…</p>
+                    <div class="button">More +</div>
+                </div>
+            </div>
+        
+            <div class="article">
+                    <div class="thumbnail"><img src="images/image3.jpg" alt="Author Name"/></div>
+                    <div class="content">
+                        <h1>Sahil Kalra</h1>
+                        <p>Everybody has their private world where they can be alone, to connect to their mysteries where one feel more united and open to in life....</p>
+                        <div class="button">More +</div>
+                    </div>
+            </div>
+           
+            <div class="article">
+                    <div class="thumbnail"><img src="images/image5.jpg" alt="Author Name"/></div>
+                    <div class="content">
+                        <h1>Sahil Kalra</h1>
+                        <p>Everybody has their private world where they can be alone, to connect to their mysteries where one feel more united and open to in life....</p>
+                        <div class="button">More +</div>
+                    </div>
+            </div> 
+
+            <div class="loadmore">Load More</div>
+        </div>
+
+
+        <div class="footer">
+            <p><a href="#">Privacy Policy</a> / <a href="#">Cookie Policy</a></p>
+            <p>© Basic. WordPress Template 2020 / All Rights Reserved</p>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+        var x = document.getElementById("toggleMyMenu");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+            }
+        }
+    </script> 
+</body>
+</html>
